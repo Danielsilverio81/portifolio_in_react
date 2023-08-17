@@ -10,7 +10,7 @@ export default function Home() {
      text-fontColor [text-shadow:_2px_1px_1px_#4D3F8F]"
       >
         <p className="
-            md:text-4xl font-bold "
+            mt-3 md:text-4xl font-bold"
         ><span className="
            text-3xl md:text-6xl"
         >O</span>lá sou
@@ -24,15 +24,15 @@ export default function Home() {
             [text-shadow:_2px_1px_1px_#415A77]"
         >Frontend Developer.</h2>
         <p className="
-        md:text-2xl font-bold
+        mb-2 md:text-2xl font-bold
         "
-        >O dev que você estava precisando</p>
+        >O dev que você estava Buscando</p>
       </div>
       <div className="
-      flex justify-center items-center mt-20 mx-auto p-8 w-3/5 md:w-2/5 md:mr-10 
-      2xl:max-w-2xl 2xl:mr-28 bg-bgCardImage"
+      flex justify-center items-center mb-5 mx-auto p-8 w-3/5 md:w-2/5 md:mr-10 md:mt-20
+      2xl:max-w-2xl 2xl:mr-28 bg-bgCardImage rounded-xl"
       ><img className="
-       w-full max-w-md"
+       w-full max-w-md rounded-lg"
        src={frontCode} loading="lazy" alt="" />
        </div>
     </section>
