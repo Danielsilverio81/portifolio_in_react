@@ -1,19 +1,29 @@
+import { AiFillContacts } from "react-icons/ai";  
+import { BsFillRocketTakeoffFill } from "react-icons/bs"; 
 import { BsFillPersonFill } from "react-icons/bs"; 
 import { AiTwotoneHome } from "react-icons/ai"; 
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 export default function Header() {
   return (
     <div className="
-    h-20 w-full flex items-center justify-between bg-navigationColor"
+    h-20 md:w-full flex items-center justify-between bg-navigationColor"
     >
         <div className="mt-6 ml-16 h-12 w-12">
-            <AiTwotoneHome size={40} className="text-linkColor" />
+            <NavLink to={'/'}><AiTwotoneHome size={40} className="text-linkColor" /></NavLink>
         </div>
-        <nav className="
-            flex gap-11 mt-8 mr-16 text-lg text-linkColor">
-                <Link className="flex items-center" to={'/about'}><BsFillPersonFill />Sobre</Link>
-                <Link className="flex items-center" to={'/projects'}><BsFillPersonFill />Sobre</Link>
-                <li>Contatos</li>
+        <nav>
+                <ul className="
+                 flex md:gap-11 mt-8 mr-16 text-lg text-linkColor">
+                  <li>
+                    <NavLink className="flex items-center" to={'/about'}><BsFillPersonFill />Sobre</NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="flex items-center fill-linkColor" to={'/projects'}><BsFillRocketTakeoffFill /> Projetos</NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="flex items-center fill-linkColor" to={'/contacts'}><AiFillContacts />Contatos</NavLink>
+                  </li>
+                </ul> 
         </nav>
     </div>
   )

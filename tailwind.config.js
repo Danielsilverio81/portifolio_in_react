@@ -15,6 +15,7 @@ export default {
          'lightBg':'#e0e1dd',
          'fontColor':'#415A77',
          'titleColor':'#C9ADA7',
+         'bgCardImage': '#1B263B'
         },
         fontFamily: {
         'openSans': ['Open Sans', 'sans-serif'],

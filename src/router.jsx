@@ -3,6 +3,7 @@ import RootLayout from "./routers/RootLayout";
 import Home from "./routers/Home";
 import About from "./routers/About";
 import Projects from "./routers/Projects";
+import Contacts from "./routers/Contacts";
 
 export const router = createBrowserRouter([
     {
@@ -17,6 +18,9 @@ export const router = createBrowserRouter([
         }, {
             path: "projects",
             element: <Projects />
+        }, {
+            path: "contacts",
+            element: <Contacts/>
         }]
     }
 ])
