@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-       dropShadow: {
-        '2md': '0_1px_1px_rgb(77,63,143,100%)',
-      },
       colors: {
          'navigationColor':'#778da9',
          'linkColor':'#4D3F8F',

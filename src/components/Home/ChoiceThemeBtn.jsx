@@ -1,6 +1,8 @@
 
 import sun from "../../assets/images/sol.png";
 import moon from "../../assets/images/lua.png";
+import starrySky from "../../assets/images/ceu-estrelado.webp"
+import blueSky from "../../assets/images/nuvem-branca-no-ceu-azul.webp"
 import { useState, useEffect } from "react";
 
 const switchTheme = document.getElementById('switchTheme')
@@ -25,13 +27,14 @@ export default function ChoiceThemeBtn() {
       className="hidden"
       onChange={() => setDarkMode(!darkMode)} 
        />
-      <div className="
-      bg-slate-500 mr-4 mt-4 w-12 h-6 rounded-3xl border border-gray-500
-      flex items-center gap-x-3 relative cursor-pointer animate-rightShow
-      "
+      <div className={` mr-4 mt-4 w-12 h-6 rounded-3xl border border-gray-500
+      flex items-center justify-between gap-x-3 relative cursor-pointer animate-rightShow
+      bg-cover bg-no-repeat
+      `}
+      style={{backgroundImage: darkMode ? `url( ${starrySky})` : `url( ${blueSky})`}}
       >
-        <img className="w-4 h-4" src={sun} alt="" />
         <img className="w-4 h-4" src={moon} alt="" />
+        <img className="w-4 h-4" src={sun} alt="" />
           <button className={`
           bg-lightBg w-4 h-4 rounded-full pointer-events-none  absolute z-10
           ${darkMode ? 'translate-x-7': 'transform-none'} duration-700

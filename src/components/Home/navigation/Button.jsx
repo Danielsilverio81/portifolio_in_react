@@ -1,6 +1,5 @@
 import React from 'react'
 import propTypes from 'prop-types'
-import { GiHamburgerMenu } from "react-icons/gi";
 
 Botton.propTypes = {
     onclick: propTypes.func,

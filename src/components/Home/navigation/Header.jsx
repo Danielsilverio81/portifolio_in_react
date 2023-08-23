@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import MenuToogle from "./MenuToogle";
 import Button from "./Button";
-import ChoiceThemeBtn from "./ChoiceThemeBtn";
+import ChoiceThemeBtn from "../ChoiceThemeBtn";
 
 let active;
 const hoverLink = 'hover:scale-110 hover:text-teal-200';
