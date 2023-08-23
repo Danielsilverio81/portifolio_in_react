@@ -8,12 +8,11 @@ import { useState, useEffect } from "react";
 const switchTheme = document.getElementById('switchTheme')
 
 export default function ChoiceThemeBtn() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
+  const [darkMode, setDarkMode] = useState(() => {
     const darkModeStored = localStorage.getItem("darkMode");
-    if (darkModeStored === "true") {setDarkMode(true)}
-  }, []);
+    if(!darkModeStored) return false
+    if(darkModeStored === "true") return true
+  });
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));

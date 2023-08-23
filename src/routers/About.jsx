@@ -1,6 +1,8 @@
 
 export default function About() {
   return (
-    <div>About</div>
+     <section>
+      <img src="./../" alt="" />
+     </section>
   )
 }
