@@ -27,7 +27,7 @@ export default function ChoiceThemeBtn() {
       onChange={() => setDarkMode(!darkMode)} 
        />
       <div className={` mr-4 mt-4 w-12 h-6 rounded-3xl border border-gray-500
-      flex items-center justify-between gap-x-3 relative cursor-pointer animate-rightShow
+      flex items-center justify-between gap-x-3 relative cursor-pointer
       bg-cover bg-no-repeat
       `}
       style={{backgroundImage: darkMode ? `url( ${starrySky})` : `url( ${blueSky})`}}
@@ -36,7 +36,7 @@ export default function ChoiceThemeBtn() {
         <img className="w-4 h-4" src={sun} alt="" />
           <button className={`
           bg-lightBg w-4 h-4 rounded-full pointer-events-none  absolute z-10
-          ${darkMode ? 'translate-x-7': 'transform-none'} duration-700
+          ${darkMode ? 'translate-x-7': 'transform-none'} duration-50000
             `}
           >
           </button>
