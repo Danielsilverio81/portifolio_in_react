@@ -13,7 +13,9 @@ export default {
          'fontColor':'#415A77',
          'titleColor':'#C9ADA7',
          'bgCardImage': '#1B263B',
-         'mode': '#0d1b2a'
+         'mode': '#0d1b2a',
+         'heroAbout': '#343a40',
+         'heroAboutDark': '#6c757d'
         },
       fontFamily: {
         'openSans': ['Open Sans', 'sans-serif'],

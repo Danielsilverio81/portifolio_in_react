@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header className="
     bg-navigationColor flex justify-between h-fit w-full md:h-20 duration-500
-     dark:bg-bgCardImage dark:border-2 dark:border-slate-600"
+     dark:bg-bgCardImage border-2 border-navigationColor dark:border-2 dark:border-slate-600"
     >
       <div className={`
       hidden p-4 md:flex flex-col w-full md:items-center md:flex-row md:justify-between
