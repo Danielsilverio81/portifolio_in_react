@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'homeBgImage': "url('./src/assets/images/backgroundDetail.png')",
+      },
       colors: {
          'navigationColor':'#778da9',
          'linkColor':'#4D3F8F',
@@ -15,7 +18,8 @@ export default {
          'bgCardImage': '#1B263B',
          'mode': '#0d1b2a',
          'heroAbout': '#343a40',
-         'heroAboutDark': '#6c757d'
+         'heroAboutDark': '#6c757d',
+         'cardsTechnology': '#D9D9D9'
         },
       fontFamily: {
         'openSans': ['Open Sans', 'sans-serif'],
