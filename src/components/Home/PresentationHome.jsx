@@ -1,7 +1,7 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import BtnDownload from "./BtnDownload";
 
-const contactsLink = `w-8 h-8 md:w-10 md:h-10 bg-bgCardImage cursor-pointer 
+const contactsLink = `w-8 h-8 md:w-10 md:h-10 bg-darkBgColor cursor-pointer 
 rounded-full flex items-center justify-center mt-2 ml-6`;
 
 export default function Presentation() {
@@ -10,7 +10,7 @@ export default function Presentation() {
       className="
     ml-10 mt-10 md:ml-10 md:mt-20 2xl:ml-32 2xl:mt-28 md:w-96 
   text-fontColor [text-shadow:_2px_1px_1px_#4D3F8F] w-fit
-  dark:text-lightBg
+  dark:text-secondaryColor
   "
     >
       <p

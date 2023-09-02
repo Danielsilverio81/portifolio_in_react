@@ -39,7 +39,7 @@ export default function ChoiceThemeBtn() {
           <img className="w-4 h-4" src={sun} alt="" />
           <button
             className={`
-          bg-lightBg w-4 h-4 rounded-full pointer-events-none  absolute z-10
+          bg-secondaryColor w-4 h-4 rounded-full pointer-events-none  absolute z-10
           ${darkMode ? "translate-x-7" : "transform-none"} duration-75
             `}
           ></button>

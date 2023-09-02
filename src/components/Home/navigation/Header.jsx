@@ -34,7 +34,7 @@ export default function Header() {
       hidden p-4 md:flex flex-col w-full md:items-center md:flex-row md:justify-between
       `}>
         <div className="
-        mt-2 mb-2 mr-20 md:ml-16 md:mr-2 text-linkColor dark:text-slate-300
+        mt-2 mb-2 mr-20 md:ml-16 md:mr-2 text-primaryColor dark:text-slate-300
         ">
           <NavLink to={'/'}><AiTwotoneHome size={30} className={`
            ${hoverLink}
@@ -42,7 +42,7 @@ export default function Header() {
         </div>
         <nav>
           <ul className="
-                   flex flex-col text-sm md:text-lg text-linkColor dark:text-slate-300 md:flex-row md:mr-16 md:gap-11">
+                   flex flex-col text-sm md:text-lg text-primaryColor dark:text-slate-300 md:flex-row md:mr-16 md:gap-11">
             <li>
               <NavLink className={`
               ${linkStyle} ${hoverLink}

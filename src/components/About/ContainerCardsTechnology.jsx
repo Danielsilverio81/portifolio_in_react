@@ -13,15 +13,16 @@ export default function ContainerCardsTechnology() {
     <section>
         <h2
           className="
-        text-2xl mb-2 text-fontColor  dark:text-lightBg [text-shadow:_1px_1px_2px_black]
+        md:text-2xl mb-3 text-fontColor  dark:text-secondaryColor [text-shadow:_1px_1px_2px_black]
+        text-sm 
         "
         >
           Minhas Habilidades:
         </h2>
         <div
           className="
-        w-fit h-auto p-6 mx-auto grid auto-rows-auto grid-cols-4 mb-10 gap-5
-        bg-bgCardImage 
+        w-fit h-auto p-6 mx-auto grid auto-rows-auto grid-cols-2 md:grid-cols-4 mb-10 gap-5
+        bg-darkBgColor 
         "
         >
             <CardsTechnology
