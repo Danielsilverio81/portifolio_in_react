@@ -2,32 +2,32 @@ import { FiX } from "react-icons/fi";
 import { AiOutlineMenu, AiFillContacts, AiTwotoneHome } from "react-icons/ai"; 
 import { BsFillRocketTakeoffFill, BsFillPersonFill  } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuToogle from "./MenuToogle";
 import Button from "./Button";
 import ChoiceThemeBtn from "../ChoiceThemeBtn";
 
-let active;
 const hoverLink = 'hover:scale-110 hover:text-teal-200';
 const linkStyle = 'flex items-center gap-1 pb-2 cursor-pointer';
 
 export default function Header() {
 
   const [menuIsOpen, setMenuIsOpen] = useState(false)
+  const [activeToogle, setActiveToogle] = useState(false)
 
-  const handleMenu = () => {
-    if (!menuIsOpen) {
-      active = true
+  useEffect(() => {
+    if (menuIsOpen) {
       setMenuIsOpen(true)
+      setActiveToogle(true)
     } else {
-      active = false
       setMenuIsOpen(false)
+      setActiveToogle(false)
     }
-  }
+  }, [menuIsOpen, activeToogle])
 
   return (
     <header className="
-    bg-navigationColor flex justify-between h-fit w-full md:h-20 duration-500
+    bg-navigationColor flex justify-between w-full h-14 duration-500
      dark:bg-bgCardImage border-2 border-navigationColor dark:border-2 dark:border-slate-600"
     >
       <div className={`
@@ -62,7 +62,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <Button onclick={handleMenu} active={active}>
+      <Button onclick={() => setMenuIsOpen(!menuIsOpen)} active={activeToogle}>
         {!menuIsOpen ? (
           <>
           <AiOutlineMenu />
