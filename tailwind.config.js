@@ -26,17 +26,17 @@ export default {
        },
       keyframes: {
         rightShow: {
-          '0%': {transform: 'translate3d(60px, 0, 0)',opacity:'0'},
+          '0%': {transform: 'translate3d(70px, 0, 0)',opacity:'0'},
           '100%': {transform: 'translate3d(0px, 0px, 0px)',opacity:'1'}
         },
         leftShow: {
-          '0%': {transform: 'translate3d(-60px, 0, 0)',opacity:'0'},
+          '0%': {transform: 'translate3d(-70px, 0, 0)',display:'none'},
           '100%': {transform: 'translate3d(0px, 0px, 0px)',opacity:'1'}
         }
       },
       animation: {
-        rightShow: 'rightShow 0.9s linear 1',
-        leftShow: 'leftShow 0.9s linear 1',
+        rightShow: 'rightShow 1s linear 1',
+        leftShow: 'leftShow 1s linear 1',
       }
   },
   plugins: [],

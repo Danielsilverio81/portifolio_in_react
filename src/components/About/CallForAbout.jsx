@@ -1,6 +1,10 @@
 import { AiOutlineArrowDown } from "react-icons/ai";
 import photo from "../../assets/images/myPhoto.png";
 import ContainerCardsAbout from "./ContainerCardsAbout";
+const textStyle = `w-[80%] text-md text-fontColor dark:text-secondaryColor ml-4`;
+const titleStyles = `font-bold text-fontColor dark:text-secondaryColor`;
+
+const getAge = () => new Date().getFullYear() - 1995;
 
 export default function CallForAbout() {
   return (
@@ -9,7 +13,7 @@ export default function CallForAbout() {
       w-full md:min-h-screen mb-10 md:mb-0 mx-auto
       "
     >
-      <div className="flex items-center justify-center my-10">
+      <div className="flex items-center justify-center my-8">
         <span
           className="
       text-xl font-bold mr-4 text-fontColor  dark:text-secondaryColor
@@ -34,8 +38,8 @@ export default function CallForAbout() {
       >
         <div
           className="
-      w-48 h-auto bg-teal-300 pr-5 pt-2 md:w-3/4 md:ml-28 rounded-r-3xl
-      border border-black
+      w-48 h-auto mx-2 bg-teal-300 pr-5 pt-2 md:w-3/4 md:ml-28 rounded-r-3xl
+      border border-black animate-leftShow
     "
         >
           <img className="w-full h-full" src={photo} alt="" />
@@ -49,24 +53,21 @@ export default function CallForAbout() {
           >
             A vontade e criatividade que faltava para realizar o seu projeto.
           </p>
-          <h2
-            className="
-          ml-6 my-3 text-xl text-fontColor dark:text-secondaryColor
-          "
-          >
-            Bio:
-          </h2>
-          <p className="
-          text-md text-fontColor dark:text-secondaryColor ml-4
-          ">
+          <h2 className={`ml-4 my-3 text-xl ${titleStyles}`}>Bio:</h2>
+          <p className={textStyle}>
             Desenvolvedor Front end, apaixonado por tecnologia e sempre pensando
-            no entretenimento e usabilidade, buscando criar soluções
-            simples, sofisticadas e com foco no usuário final. Procurando sempre novos
+            no entretenimento e usabilidade, buscando criar soluções simples,
+            sofisticadas e com foco no usuário final. Procurando sempre novos
             conhecimentos e aprimorar as habilidades que ja possuo.
           </p>
+          <div className={`mt-1 ${textStyle}`}>
+            <h3 className={`text-md ${titleStyles}`}>Informações pessoais:</h3>
+            <p>Endereço: Matozinhos (Belo Horizonte) Minas Gerais</p>
+            <p>Idade: {getAge()} anos</p>
+          </div>
         </div>
       </div>
-        <ContainerCardsAbout />
+      <ContainerCardsAbout />
     </div>
   );
 }

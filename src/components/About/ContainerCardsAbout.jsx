@@ -7,7 +7,7 @@ export default function ContainerCardsAbout() {
   return (
     <div
     className="
-     container grid auto-rows-auto grid-cols-2 md:grid-cols-3 gap-2 mb-3 mx-auto
+     w-[85%] grid auto-rows-auto grid-cols-2 md:grid-cols-3 gap-6 mb-2 mx-auto
 "
   >
     <CardsAbout

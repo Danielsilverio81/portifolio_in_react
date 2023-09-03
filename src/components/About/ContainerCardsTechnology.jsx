@@ -8,16 +8,18 @@ import bootstrapImg from "../../assets/images/icons8-bootstrap-96.png";
 import htmlImg from "../../assets/images/icons8-html-96.png";
 import gitImg from "../../assets/images/icons8-git-96.png";
 
+
+
 export default function ContainerCardsTechnology() {
   return (
     <section>
         <h2
           className="
-        md:text-2xl mb-3 text-fontColor  dark:text-secondaryColor [text-shadow:_1px_1px_2px_black]
-        text-sm 
+        md:text-2xl mb-3 text-fontColor  dark:text-secondaryColor [text-shadow:_1px_1px_2px_black] 
+        font-bold ml-3 md:ml-48
         "
         >
-          Minhas Habilidades:
+          Hard skills:
         </h2>
         <div
           className="
@@ -41,13 +43,13 @@ export default function ContainerCardsTechnology() {
             imageIcon={tailwindCssImg}
             textCard={'Tailwind Css'}
              />
+            <CardsTechnology
+           imageIcon={bootstrapImg}
+           textCard={'Bootstrap'}
+            />
              <CardsTechnology
             imageIcon={cssImg}
             textCard={'CSS'}
-             />
-             <CardsTechnology
-            imageIcon={bootstrapImg}
-            textCard={'Bootstrap'}
              />
               <CardsTechnology
             imageIcon={htmlImg}
