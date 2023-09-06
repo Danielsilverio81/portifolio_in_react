@@ -1,8 +1,9 @@
 
-import CallForAbout from "../components/About/CallForAbout";
-import ContainerCardsTechnology from "../components/About/ContainerCardsTechnology";
-import ContainerSoftSkills from "../components/About/ContainerSoftSkills";
+import CallForAbout from "../components/AboutComponents/CallForAbout";
+import ContainerCardsTechnology from "../components/AboutComponents/ContainerCardsTechnology";
+import ContainerSoftSkills from "../components/AboutComponents/ContainerSoftSkills";
 import ScrollAnimate from "../components/ScrollAnimate";
+import ScrollBtn from "../components/ScrollToTop";
 
 export default function About() {
 
@@ -15,7 +16,7 @@ export default function About() {
       <ScrollAnimate animateClass='animate-leftShow'>
       <ContainerSoftSkills />
       </ScrollAnimate>
-      
+      <ScrollBtn />
     </section>
   );
 }

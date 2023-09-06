@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Home/navigation/Header";
+import Header from "../components/HomeComponents/navigation/Header";
 
 export default function RootLayout() {
   return (
@@ -7,7 +7,7 @@ export default function RootLayout() {
       <Header />
       <main
         className="
-    flex flex-col flex-[1 0 auto]
+     flex flex-col flex-[1 0 auto]
     "
       >
         <Outlet />
