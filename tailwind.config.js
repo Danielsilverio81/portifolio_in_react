@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'md': '775px'
+      },
       backgroundImage: {
         'homeBgImage': "url('./src/assets/images/backgroundDetail.png')",
       },

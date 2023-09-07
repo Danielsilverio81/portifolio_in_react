@@ -14,15 +14,15 @@ export default function ScrollAnimate({animateClass, children}) {
       const options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.5, // Isso determina quando a animação deve acontecer com base na visibilidade no viewport
+        threshold: 0.5, 
       };
   
       const handleIntersection = (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            animatedElementRef.current.classList.add(animateClass); // Substitua "animate-class" pelo nome da classe de animação do Tailwind CSS que você deseja aplicar
-            observer.unobserve(entry.target); // Pare de observar o elemento depois que a animação for acionada
+            animatedElementRef.current.classList.add(animateClass); 
+            observer.unobserve(entry.target); 
           }
         });
       };

@@ -1,5 +1,5 @@
 
-import CallForAbout from "../components/AboutComponents/CallForAbout";
+import CallForAbout from "../components/AboutComponents/BioForAbout";
 import ContainerCardsTechnology from "../components/AboutComponents/ContainerCardsTechnology";
 import ContainerSoftSkills from "../components/AboutComponents/ContainerSoftSkills";
 import ScrollAnimate from "../components/ScrollAnimate";

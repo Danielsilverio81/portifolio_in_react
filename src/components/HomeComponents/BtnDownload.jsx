@@ -5,9 +5,12 @@ export default function BtnDownload() {
     <div className="w-48 mt-5 mb-5">
     <a href="/src/pdf/Currículo Básico profissional neutro azul e branco (1).pdf" download>
       <button className="
-      p-2 h-auto bg-darkBgColor text-zinc-100 animate-pulse rounded-2xl flex
-      items-center justify-center gap-1
-      ">Download Currículo <AiOutlineDownload size={20} /> </button>
+      h-auto p-1 bg-darkBgColor text-zinc-100 rounded-l-lg flex
+      items-center justify-center gap-1 border border-black
+      ">Download Currículo 
+      <div className="border-l-2 border-blue-800 animate-pulse">
+        <AiOutlineDownload size={20} />
+      </div> </button>
     </a>
   </div>
   )

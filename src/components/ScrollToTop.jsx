@@ -8,11 +8,7 @@ export default function ScrollBtn() {
     // This effect listens to scroll events and updates the 'visible' state accordingly.
     const toggleVisible = () => {
       const scrolled = document.documentElement.scrollTop;
-      if (scrolled > 300) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+     scrolled > 250 ? setVisible(true) : setVisible(false)
     };
     window.addEventListener("scroll", toggleVisible);
   }, []);
