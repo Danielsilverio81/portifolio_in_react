@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         'homeBgImage': "url('./src/assets/images/backgroundDetail.png')",
+        'contactBgImage': "url('./src/assets/images/contactsBg.jpg')"
       },
       colors: {
          'navigationColor':'#778da9',

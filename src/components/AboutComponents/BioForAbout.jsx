@@ -13,7 +13,7 @@ export default function CallForAbout() {
       w-full mx-auto min-h-screen mb-10 md:mb-0
       "
     >
-      <div className="flex items-center justify-center my-8">
+      <div className="flex items-center justify-center my-6">
         <span
           className="
       text-xl font-bold mr-4 text-fontColor  dark:text-secondaryColor
@@ -33,13 +33,13 @@ export default function CallForAbout() {
       <div
         className="
        w-full h-fit mx-auto flex flex-col md:flex-row 
-      items-start justify-center pb-10
+      items-start justify-center pb-4
   "
       >
         <div
           className="
       w-48 h-auto mx-2 bg-teal-300 pr-5 pt-2 md:w-3/4 md:ml-28 rounded-r-3xl
-      border border-black animate-leftShow
+      border-2 border-black animate-leftShow
     "
         >
           <img className="w-full h-full" src={photo} alt="" />
