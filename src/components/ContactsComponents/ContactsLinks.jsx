@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 ContactsLinks.propTypes = {
   linkText: propTypes.string,
   text: propTypes.string,
-  icon: propTypes.string,
+  icon: propTypes.object,
   hover: propTypes.string
 };
 
@@ -12,7 +12,7 @@ export default function ContactsLinks({ linkText, text, icon, hover }) {
     <div>
       <button
         className={`w-40 md:w-48 p-2 mt-6 md:ml-60 rounded-md bg-white dark:bg-primaryColor 
-        text-black  border-2 border-black 
+        text-black  border-2 border-black hover:scale-105 
         ${hover}`}>
         <a href={linkText}
         className="flex items-center justify-center gap-2" 

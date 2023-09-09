@@ -9,7 +9,7 @@ export default function Contacts() {
 
   return (
     <section className="
-    bg-contactBgImage w-full md:h-[calc(100vh-56px)] bg-no-repeat bg-cover
+    bg-contactBgImage w-full h-[calc(100vh-56px)] bg-no-repeat bg-cover
     flex flex-col md:flex-row gap-10 p-6
     ">
       <div className="flex w-full flex-col  justify-center">

@@ -1,9 +1,10 @@
-import { data } from "./js/data";
+import { useLoaderData } from "react-router-dom";
 import HoverElementsImage from "./CreatePreview";
 
 
 
 export default function ShowMyProjects() {
+  const data = useLoaderData()
   return (
     <div
       className="

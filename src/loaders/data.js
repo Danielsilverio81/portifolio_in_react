@@ -1,4 +1,5 @@
-export const data = [
+export default function loadData() {
+  return [
     {
       id: 1,
       name: "Conversor de Moedas Fetch Api",
@@ -65,3 +66,4 @@ export const data = [
       imageDefault: "./src/assets/images/project_preview_8.png",
     },
   ];
+}

@@ -2,23 +2,26 @@ import { useState } from "react";
 import propTypes from "prop-types";
 
 FormEmail.propTypes = {
-    activeForm: propTypes.bool
-}
+  activeForm: propTypes.bool,
+};
 
 const inputStyle = `bg-darkBgColor text-white p-2 rounded-md w-full my-2`;
 
-export default function FormEmail({activeForm}) {
+export default function FormEmail({ activeForm }) {
   const [nameValue, setNameValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
   const [messageValue, setMessageValue] = useState("");
+
+  
 
   return (
     <div
       className={`
       w-full h-auto border-2 border-red-300 bg-white p-4 rounded-md 
-      ${activeForm ? 'inline' : 'hidden'}
-      `}>
-      <form>
+      ${activeForm ? "inline" : "hidden"}
+      `}
+    >
+      <form >
         <label className="font-bold" htmlFor="nameId">
           Nome:
         </label>
@@ -52,6 +55,15 @@ export default function FormEmail({activeForm}) {
           onChange={(e) => setMessageValue(e.target.value)}
           value={messageValue}
         />
+
+        <button
+          className="
+        bg-emerald-400 p-2 border border-black rounded-md
+        "
+          type="submit"
+        >
+          Enviar
+        </button>
       </form>
     </div>
   );
