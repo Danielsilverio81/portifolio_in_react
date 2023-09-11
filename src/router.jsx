@@ -4,8 +4,6 @@ import Home from "./routers/Home";
 import About from "./routers/About";
 import Projects from "./routers/Projects";
 import Contacts from "./routers/Contacts";
-import loadData from "./loaders/data";
-import DataBoundary from "./error-boundaries/DataBoundary";
 
 export const router = createBrowserRouter([
     {
@@ -19,9 +17,7 @@ export const router = createBrowserRouter([
             element: <About />
         }, {
             path: "projects",
-            element: <Projects />,
-            loader: loadData,
-            errorElement: <DataBoundary />
+            element: <Projects />
         }, {
             path: "contacts",
             element: <Contacts/>
