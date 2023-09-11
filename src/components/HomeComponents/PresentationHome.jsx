@@ -52,12 +52,16 @@ export default function Presentation() {
 
       <section className="flex gap-x-5">
         <div className={`${contactsLink}`}>
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/danielsilverio81/" 
+          target="_blank"
+          rel="noreferrer">
             <AiFillLinkedin size={29} />
           </a>
         </div>
         <div className={`${contactsLink}`}>
-          <a href="" target="_blank">
+          <a href="https://github.com/Danielsilverio81" 
+          target="_blank"
+          rel="noreferrer">
             <AiFillGithub size={30} />
           </a>
         </div>

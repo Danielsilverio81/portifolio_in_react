@@ -1,14 +1,10 @@
 import { FiX } from "react-icons/fi"; 
-import { AiOutlineMenu, AiFillContacts, AiTwotoneHome } from "react-icons/ai"; 
-import { BsFillRocketTakeoffFill, BsFillPersonFill  } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai"; 
 import { useEffect, useState } from "react";
 import MenuToggle from "./MenuToggle";
 import Button from "./ButtonToggle";
 import ChoiceThemeBtn from "../ChoiceThemeBtn";
-
-const hoverLink = 'hover:scale-110 hover:text-teal-200';
-const linkStyle = 'flex items-center gap-1 pb-2 cursor-pointer';
+import NavContent from "./NavContent";
 
 export default function Header() {
 
@@ -33,34 +29,7 @@ export default function Header() {
       <div className={`
       hidden p-4 sm:flex flex-col w-full sm:items-center sm:flex-row sm:justify-between
       `}>
-        <div className="
-        mt-2 mb-2 mr-20 md:ml-16 md:mr-2 text-primaryColor dark:text-slate-300
-        ">
-          <NavLink to={'/'}><AiTwotoneHome size={30} className={`
-           ${hoverLink}
-          `}/></NavLink>
-        </div>
-        <nav>
-          <ul className="
-                   flex flex-col text-sm md:text-lg text-primaryColor dark:text-slate-300 sm:flex-row md:mr-16 sm:gap-11">
-            <li>
-              <NavLink className={`
-              ${linkStyle} ${hoverLink}
-              `} 
-               to={'/about'}><BsFillPersonFill />Sobre</NavLink>
-            </li>
-            <li>
-              <NavLink className={`
-              ${linkStyle} ${hoverLink}
-              `} to={'/projects'}><BsFillRocketTakeoffFill /> Projetos</NavLink>
-            </li>
-            <li>
-              <NavLink className={`
-              ${linkStyle} ${hoverLink}
-              `} to={'/contacts'}><AiFillContacts />Contatos</NavLink>
-            </li>
-          </ul>
-        </nav>
+        <NavContent />
       </div>
       <Button onclick={() => setMenuIsOpen(!menuIsOpen)} active={activeToggle}>
         {!menuIsOpen ? (
@@ -73,8 +42,9 @@ export default function Header() {
           </>
         )}
       </Button>
-      <div className={`${!menuIsOpen ? 'opacity-0 top-[-190px]' : 'opacity-100 top-[56px]'} md:hidden
-        absolute bg-slate-800 w-full p-4 transition-all delay-75 ease-in duration-500`}>
+      <div className={`${!menuIsOpen ? 'opacity-0 top-[-190px]' : 'opacity-100 top-[56px]'} sm:hidden
+        absolute bg-slate-800 w-[96%] h-[47px] p-4 transition-all delay-100 ease-in-out duration-700 
+        flex items-center gap-3 mx-1`}>
         <MenuToggle />
       </div>
         <ChoiceThemeBtn/>

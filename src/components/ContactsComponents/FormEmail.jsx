@@ -110,7 +110,7 @@ export default function FormEmail({ activeForm }) {
 
         <button
           className="
-        bg-emerald-400 p-2 border border-black rounded-md w-[90%] mx-auto mt-2 mb-8
+        bg-emerald-400 p-2 border border-black rounded-md w-full mt-2 mb-8
         "
           type="submit"
         >

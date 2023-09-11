@@ -20,7 +20,7 @@ export default function CardsTechnology({ imageIcon, textCard }) {
             <img className="
             w-16 md:w-20 md:h-20 object-cover
             "
-            src={imageIcon} alt="" />
+            src={imageIcon} alt={textCard} />
         </div>
         <h3 className={`${styleTextCard}`}>{textCard}</h3>
       </div>

@@ -30,7 +30,7 @@ export default {
        },
       keyframes: {
         rightShow: {
-          '0%': {transform: 'translate3d(70px, 0, 0)',opacity:'0'},
+          '0%': {transform: 'translate3d(65px, 0, 0)',opacity:'0'},
           '100%': {transform: 'translate3d(0px, 0px, 0px)',opacity:'1'}
         },
         leftShow: {
