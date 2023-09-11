@@ -10,7 +10,7 @@ export default {
         'md': '775px'
       },
       backgroundImage: {
-        'homeBgImage': "url('./src/assets/images/backgroundDetail.png')",
+        'homeBgImage': "url('/assets/images/backgroundDetail.png')",
         'contactBgImage': "url('./src/assets/images/contactsBg.jpg')"
       },
       colors: {
