@@ -13,7 +13,7 @@ export default function CallForAbout() {
       w-full mx-auto min-h-screen mb-10 md:mb-0
       "
     >
-      <div className="flex items-center justify-center mt-16 mb-3 md:my-7">
+      <div className="flex items-center justify-center mt-16 mb-3 md:my-3">
         <span
           className="
       text-xl font-bold mr-4 text-fontColor  dark:text-secondaryColor
@@ -64,6 +64,7 @@ export default function CallForAbout() {
             <h3 className={`text-md ${titleStyles}`}>Informações pessoais:</h3>
             <p>Endereço: Matozinhos (Belo Horizonte) Minas Gerais</p>
             <p>Idade: {getAge()} anos</p>
+            <p>+ de 9 certificados na Area...</p>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ HoverElementsImage.propTypes = {
   link: propTypes.string,
   repository: propTypes.string,
   defaultImage: propTypes.string,
+  description: propTypes.string,
 };
 
 export default function HoverElementsImage({
@@ -15,6 +16,7 @@ export default function HoverElementsImage({
   repository,
   link,
   defaultImage,
+  description,
 }) {
   const [hoverEvent, setHoverEvent] = useState(false);
 
@@ -34,7 +36,7 @@ export default function HoverElementsImage({
       >
         <div
           className="
-          w-fit md:w-[480px] md:h-[440px] flex flex-col gap-4 border border-red-400 rounded-md p-2 bg-gray-700
+          w-fit md:w-[480px] h-fit flex flex-col gap-4 border border-red-400 rounded-md p-2 bg-gray-700
         "
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -62,7 +64,7 @@ export default function HoverElementsImage({
           </a>
           <div
             className="
-    w-full md:w-[460px] md:h-[285px] rounded-md mx-auto my-2
+    w-full md:w-[460px] md:h-[285px] rounded-md mx-auto my-1
     "
           >
             <img
@@ -84,6 +86,13 @@ export default function HoverElementsImage({
                 alt={text}
               />
             )}
+          </div>
+          <div
+            className="
+          w-[97%] p-1 text-xs sm:text-sm
+          "
+          >
+            <p>{description}</p>
           </div>
         </div>
       </div>

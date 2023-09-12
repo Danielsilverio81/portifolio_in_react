@@ -12,7 +12,7 @@ export default function ContainerCardsAbout() {
   >
     <CardsAbout
       icon={<TbCertificate size={30} />}
-      text={"Mais de 00 Horas de aulas praticas"}
+      text={"+ de 205 Horas de aulas praticas e Teóricas"}
     />
     <CardsAbout
       icon={<FaGraduationCap size={30} />}
