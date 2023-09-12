@@ -6,9 +6,11 @@ export default function Home() {
   return (
     <section
     
-     className="
-    w-full md:h-[calc(100vh-56px)] flex sm:flex-col flex-wrap flex-row md:justify-between md:bg-homeBgImage
-    md:items-center 2xl:justify-around bg-no-repeat bg-cover bg-right-top bg-none"
+     className={`
+     w-full md:h-[calc(100vh-56px)] flex sm:flex-col flex-wrap flex-row md:justify-between 
+     md:bg-[url('/images/backgroundDetail.png')]
+     md:items-center 2xl:justify-around bg-no-repeat bg-cover bg-right-top bg-none
+     `}
     >
       <Presentation />
       <GifAnimate />

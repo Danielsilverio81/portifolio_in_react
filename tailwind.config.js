@@ -9,10 +9,6 @@ export default {
       screens: {
         'md': '775px'
       },
-      backgroundImage: {
-        'homeBgImage': "url('./src/assets/images/backgroundDetail.png')",
-        'contactBgImage': "url('./src/assets/images/contactsBg.jpg')"
-      },
       colors: {
          'navigationColor':'#778da9',
          'primaryColor':'#4D3F8F',

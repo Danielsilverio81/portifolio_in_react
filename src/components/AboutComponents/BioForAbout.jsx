@@ -1,5 +1,5 @@
 import { AiOutlineArrowDown } from "react-icons/ai";
-import photo from "../../assets/images/myPhoto.png";
+import photo from "/images/myPhoto.png";
 import ContainerCardsAbout from "./ContainerCardsAbout";
 const textStyle = `w-[80%] text-md text-fontColor dark:text-secondaryColor ml-4`;
 const titleStyles = `font-bold text-fontColor dark:text-secondaryColor`;

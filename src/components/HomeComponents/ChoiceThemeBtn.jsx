@@ -1,7 +1,7 @@
-import sun from "../../assets/images/sol.png";
-import moon from "../../assets/images/lua.png";
-import starrySky from "../../assets/images/ceu-estrelado.webp";
-import blueSky from "../../assets/images/nuvem-branca-no-ceu-azul.webp";
+import sun from "/images/sol.png";
+import moon from "/images/lua.png";
+import starrySky from "/images/ceu-estrelado.webp";
+import blueSky from "/images/nuvem-branca-no-ceu-azul.webp";
 import { useState, useEffect } from "react";
 
 export default function ChoiceThemeBtn() {

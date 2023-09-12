@@ -1,4 +1,4 @@
-import gifCode from "../../assets/images/Desk - Animation.gif";
+import gifCode from "/images/Desk - Animation.gif";
 
 export default function GifAnimate() {
   return (

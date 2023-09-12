@@ -1,12 +1,12 @@
 import CardsTechnology from "./Cards/CardsTechnology";
-import jsImg from "../../assets/images/JavascriptIcon.png";
-import reactImg from "../../assets/images/icons8-react-100.png";
-import sassImg from "../../assets/images/icons8-sass-96.png";
-import tailwindCssImg from "../../assets/images/icons8-tailwind-css-96.png";
-import cssImg from "../../assets/images/icons8-css-96.png";
-import bootstrapImg from "../../assets/images/icons8-bootstrap-96.png";
-import htmlImg from "../../assets/images/icons8-html-96.png";
-import gitImg from "../../assets/images/icons8-git-96.png";
+import jsImg from "/images/JavascriptIcon.png";
+import reactImg from "/images/icons8-react-100.png";
+import sassImg from "/images/icons8-sass-96.png";
+import tailwindCssImg from "/images/icons8-tailwind-css-96.png";
+import cssImg from "/images/icons8-css-96.png";
+import bootstrapImg from "/images/icons8-bootstrap-96.png";
+import htmlImg from "/images/icons8-html-96.png";
+import gitImg from "/images/icons8-git-96.png";
 
 
 
