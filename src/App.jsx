@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RootLayout from "./routes/RootLayout";
-import HomePage from "./routes/HomePage";
-import About from "./routes/About";
-import Projects from "./routes/Projects";
-import Contacts from "./routes/Contacts";
+import RootLayout from "../src/routes/RootLayout";
+import HomePage from "../src/routes/HomePage";
+import About from "../src/routes/About";
+import Projects from "../src/routes/Projects";
+import Contacts from "../src/routes/Contacts";
 
 
 export default function App() {
@@ -12,9 +12,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="about" element={<About />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contacts" element={<Contacts />} />
+          <Route path="sobre" element={<About />} />
+          <Route path="projetos" element={<Projects />} />
+          <Route path="contatos" element={<Contacts />} />
         </Route>
       </Routes>
     </BrowserRouter>

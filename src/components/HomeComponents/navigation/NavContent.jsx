@@ -62,21 +62,21 @@ export default function NavContent() {
               className={`
               ${!aboutActive ? linkStyle : activeLink} ${hoverLink}
               `} 
-               to={'/about'}><BsFillPersonFill />Sobre</NavLink>
+               to={'/sobre'}><BsFillPersonFill />Sobre</NavLink>
             </li>
             <li>
               <NavLink 
               onClick={handleChangeProjectsColor}
               className={`
               ${!projectsActive ? linkStyle : activeLink} ${hoverLink}
-              `} to={'/projects'}><BsFillRocketTakeoffFill /> Projetos</NavLink>
+              `} to={'/projetos'}><BsFillRocketTakeoffFill /> Projetos</NavLink>
             </li>
             <li>
               <NavLink 
               onClick={handleChangeContactsColor}
               className={`
               ${!contactsActive ? linkStyle : activeLink} ${hoverLink}
-              `} to={'/contacts'}><AiFillContacts />Contatos</NavLink>
+              `} to={'/contatos'}><AiFillContacts />Contatos</NavLink>
             </li>
           </ul>
         </nav>
