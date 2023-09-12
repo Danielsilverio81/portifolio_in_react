@@ -1,53 +1,21 @@
-import { useState } from "react";
 import { AiFillContacts, AiTwotoneHome } from "react-icons/ai";
 import { BsFillRocketTakeoffFill, BsFillPersonFill  } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const hoverLink = 'hover:scale-110 hover:text-teal-200';
 const linkStyle = 'flex items-center gap-1 pb-2 cursor-pointer'
-const activeLink = 'flex items-center gap-1 pb-2 cursor-pointer text-teal-400 scale-110'
 const homeStyle = 'mt-2 mb-2 md:ml-16 md:mr-2 text-primaryColor dark:text-slate-300'
+const activeLinkStyle = 'text-teal-200'; 
 
 export default function NavContent() {
-  const [aboutActive, setAboutActive] = useState(false)
-  const [projectsActive, setProjectsActive] = useState(false)
-  const [contactsActive, setContactsActive] = useState(false)
-  const [homeActive, setHomeActive] = useState(false)
+  const location = useLocation();
 
-  const handleChangeAboutColor = () => {
-    setAboutActive(true)
-    setContactsActive(false)
-    setProjectsActive(false)
-    setHomeActive(false)
-  }
-
-  const handleChangeProjectsColor = () => {
-    setProjectsActive(true)
-    setAboutActive(false)
-    setContactsActive(false)
-    setHomeActive(false)
-  }
-
-  const handleChangeContactsColor = () => {
-    setContactsActive(true)
-    setAboutActive(false)
-    setProjectsActive(false)
-    setHomeActive(false)
-  }
-
-  const handleChangeDefaultColor = () => {
-    setHomeActive(true)
-    setContactsActive(false)
-    setAboutActive(false)
-    setProjectsActive(false)
-  }
   return (
     <>
      <div className={`
-     ${!homeActive ? homeStyle : homeStyle}
+     ${homeStyle}
      `}>
           <NavLink
-          onClick={handleChangeDefaultColor}
            to={'/'}><AiTwotoneHome size={30} className={`
            ${hoverLink}
           `}/></NavLink>
@@ -58,24 +26,21 @@ export default function NavContent() {
                     md:mr-16 gap-4 sm:gap-11">
             <li>
               <NavLink 
-              onClick={handleChangeAboutColor}
               className={`
-              ${!aboutActive ? linkStyle : activeLink} ${hoverLink}
+              ${linkStyle} ${hoverLink} ${location.pathname === '/sobre' ? activeLinkStyle : ''} 
               `} 
                to={'/sobre'}><BsFillPersonFill />Sobre</NavLink>
             </li>
             <li>
-              <NavLink 
-              onClick={handleChangeProjectsColor}
+              <NavLink
               className={`
-              ${!projectsActive ? linkStyle : activeLink} ${hoverLink}
+              ${linkStyle} ${hoverLink} ${location.pathname === '/projetos' ? activeLinkStyle : ''} 
               `} to={'/projetos'}><BsFillRocketTakeoffFill /> Projetos</NavLink>
             </li>
             <li>
               <NavLink 
-              onClick={handleChangeContactsColor}
               className={`
-              ${!contactsActive ? linkStyle : activeLink} ${hoverLink}
+              ${linkStyle} ${hoverLink} ${location.pathname === '/contatos' ? activeLinkStyle : ''} 
               `} to={'/contatos'}><AiFillContacts />Contatos</NavLink>
             </li>
           </ul>
