@@ -75,7 +75,6 @@ export default function HoverElementsImage({
             `}
               src={defaultImage}
               alt={text}
-              loading="lazy"
             />
             {hoverEvent && (
               <img
