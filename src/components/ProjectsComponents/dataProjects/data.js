@@ -2,7 +2,7 @@ export const data = [
     {
       id: 1,
       name: "App de Previsão do Tempo usando a Api Open Weather",
-      gif: "/gifs/predicting-the-weather.gif",
+      gif: "/gifs/predictingWeather.gif",
       link: "https://predicting-the-weather-with-the-open-weather-api.vercel.app/",
       description: `Projeto de Autoria Propriá... Usando a api Open Weather Criei uma pagina
       que traz as informações atuais do dia, dos próximos dois dias de 3 em 3 horas e alguns dados 
@@ -15,7 +15,7 @@ export const data = [
       id: 2,
       name: "Conversor de Moedas Fetch Api",
       gif: "/gifs/Currency_Converter_Fetch_Api.gif",
-      link: "https://currency-converter-using-a-fetch-api.vercel.app/",
+      link: "https://currency-converter-using-a-fetch.vercel.app/",
       description: `Projeto de Autoria Propriá...
       Neste app web Consumo uma Api de Cambio com Fetch, usando webpack para empacotar os arquivos Javascript e comprimir o css final
       pre processado pelo Sass, melhorando a performance do app, também pude aprender como configurar o webpack e 
