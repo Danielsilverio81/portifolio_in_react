@@ -8,7 +8,11 @@ export default function ChoiceThemeBtn() {
   const [darkMode, setDarkMode] = useState(() => {
     const darkModeStored = localStorage.getItem("darkMode");
     if (!darkModeStored) return false;
-    if (darkModeStored === "true") return true;
+    if (darkModeStored === "true") {
+      return true
+    } else {
+      return false
+    }
   });
 
   useEffect(() => {
